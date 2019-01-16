@@ -8,3 +8,15 @@ To find out more about Ocelot, you can check their official [documentation](http
 
 * Visual Studio 2017 15.3+
 * Docker
+
+
+### docker run
+
+* validate config  
+  docker-compose -f docker-compose.ci.build.yml  -f docker-compose.yml -f docker-compose.override.yml  config
+* build
+  docker-compose -f docker-compose.ci.build.yml  run ci-build     
+* run
+  docker-compose up 
+* list
+  docker ps
